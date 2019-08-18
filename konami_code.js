@@ -12,5 +12,27 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+  const haduken = [
+  "ArrowUp",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "b",
+  "a"
+];
+let index = 0; 
+function onKeyDownHandler(e) {
+  const key = e.key;
+  if (key === haduken[index]) {
+    index++;
+    if (index === handuken.length) {
+      alert("Hurray!");
+      index = 0;
+    }
+  }
+}
 }
