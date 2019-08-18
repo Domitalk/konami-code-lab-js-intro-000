@@ -12,24 +12,12 @@ const codes = [
 ];
 
 function init() {
-  const haduken = [
-  "ArrowUp",
-  "ArrowUp",
-  "ArrowDown",
-  "ArrowDown",
-  "ArrowLeft",
-  "ArrowRight",
-  "ArrowLeft",
-  "ArrowRight",
-  "b",
-  "a"
-];
 let index = 0; 
 function onKeyDownHandler(e) {
   const key = e.key;
-  if (key === haduken[index]) {
+  if (key === codes[index]) {
     index++;
-    if (index === handuken.length) {
+    if (index === codes.length) {
       alert("Hurray!");
       index = 0;
     }
